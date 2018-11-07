@@ -1,9 +1,9 @@
 <?php 
+
 	global $wpdb;
 	$plugin_release = $wpdb->prefix."plugin_release";	
 	$value = $wpdb->get_results("SELECT * FROM $plugin_release WHERE id='1'",ARRAY_A)[0];
  ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +29,6 @@
 </form>
 </body>
 </html>
-
 
 <?php 
 	if(isset($_POST['plugin_release'])){
